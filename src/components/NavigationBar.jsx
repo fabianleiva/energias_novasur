@@ -79,7 +79,7 @@ const NavigationBar = () => {
         className={`fixed top-0 left-0 z-[100] w-full px-6 py-5 font-work-sans tracking-tight font-medium
   transition-transform duration-300 ease-out
   ${isNavVisible ? "translate-y-0" : "-translate-y-full"}
-  bg-[#163A3D]/80 backdrop-blur-md
+  bg-[#0A0F1A]/80 backdrop-blur-md
   `}
       >
         <div className="max-w-[90vw] mx-auto flex items-center justify-between">
@@ -91,7 +91,7 @@ const NavigationBar = () => {
               className="flex items-center"
             >
               <img
-                src="/src/assets/images/svg_logo_ep_1.png"
+                src="/src/assets/images/novasur_op1.png"
                 alt="Energy Partners"
                 className="max-w-40 lg:max-w-80"
               />
@@ -102,9 +102,8 @@ const NavigationBar = () => {
           <div className="hidden lg:flex items-center gap-6 text-lg">
             <LinkBtn id="home" label="Home" />
             <LinkBtn id="somos" label="Somos" />
-            <LinkBtn id="servicios" label="Servicios" />
-            <LinkBtn id="plataforma" label="Plataforma" />
-            <LinkBtn id="clientes" label="Clientes" />
+            <LinkBtn id="operacion" label="Operación" />
+            <LinkBtn id="desarrollo" label="Desarrollo" />
             <LinkBtn id="contacto" label="Contacto" />
           </div>
 
@@ -139,7 +138,7 @@ const NavigationBar = () => {
 
       {/* MENÚ MOBILE */}
       <div
-        className={`lg:hidden fixed inset-0 bg-[#163A3D] z-[90] flex flex-col items-center justify-center transition-opacity duration-500 ${
+        className={`lg:hidden fixed inset-0 bg-[#0A0F1A] z-[90] flex flex-col items-center justify-center transition-opacity duration-500 ${
           showInfoText
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -147,9 +146,8 @@ const NavigationBar = () => {
       >
         <LinkBtn id="home" label="Home" className="text-4xl mb-6" />
         <LinkBtn id="somos" label="Somos" className="text-4xl mb-6" />
-        <LinkBtn id="servicios" label="Servicios" className="text-4xl mb-6" />
-        <LinkBtn id="plataforma" label="Plataforma" className="text-4xl mb-6" />
-        <LinkBtn id="clientes" label="Clientes" className="text-4xl mb-6" />
+        <LinkBtn id="operacion" label="Operación" className="text-4xl mb-6" />
+        <LinkBtn id="desarrollo" label="Desarrollo" className="text-4xl mb-6" />
         <LinkBtn id="contacto" label="Contacto" className="text-4xl" />
       </div>
     </header>
