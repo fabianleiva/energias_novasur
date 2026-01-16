@@ -104,6 +104,7 @@ const NavigationBar = () => {
             <LinkBtn id="somos" label="Somos" />
             <LinkBtn id="operacion" label="Operación" />
             <LinkBtn id="desarrollo" label="Desarrollo" />
+            <LinkBtn id="clientes" label="Clientes" />
             <LinkBtn id="contacto" label="Contacto" />
           </div>
 
@@ -148,6 +149,7 @@ const NavigationBar = () => {
         <LinkBtn id="somos" label="Somos" className="text-4xl mb-6" />
         <LinkBtn id="operacion" label="Operación" className="text-4xl mb-6" />
         <LinkBtn id="desarrollo" label="Desarrollo" className="text-4xl mb-6" />
+        <LinkBtn id="clientes" label="Clientes" className="text-4xl mb-6" />
         <LinkBtn id="contacto" label="Contacto" className="text-4xl" />
       </div>
     </header>

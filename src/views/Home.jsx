@@ -14,6 +14,7 @@ import BubbleChart from "../components/BubbleChart";
 import SimpleBarChart from "../components/SimpleBarChart";
 import { IoArrowDownCircleOutline } from "react-icons/io5";
 import bg3 from "../assets/images/logo_vector.png";
+import logoEN from "../assets/images/novasur_op1.png";
 import logoEP from "../assets/images/svg_logo_ep_1.png";
 
 const Home = () => {
@@ -121,7 +122,7 @@ const Home = () => {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
               {/* Columna izquierda */}
               <div className="lg:col-span-5">
-                <h2 className="text-white font-semibold leading-[1.05] tracking-wide text-[44px] sm:text-[56px] lg:text-6xl">
+                <h2 className="text-white font-semibold leading-[1.05] tracking-wide text-[44px] sm:text-[56px] lg:text-5xl">
                   Desarrollamos,
                   <br />
                   construcimos y
@@ -204,15 +205,15 @@ const Home = () => {
       </section>
 
       {/* CARD BLANCA: OPERACIÓN + DESARROLLO */}
-      <section className="scroll-mt-[14vh] bg-[#0A0F1A] pb-16 lg:pb-24">
+      <section className="scroll-mt-[14vh] bg-[#0A0F1A] pb-16 lg:pb-24 mt-20">
         <div className="w-[94vw] mx-auto">
           <div className="bg-[#fafafa] text-black/80 rounded-3xl shadow-2xl overflow-hidden border border-black/10">
             {/* =========================
           ACTIVOS EN OPERACIÓN
       ========================== */}
             <section id="operacion" className="scroll-mt-[14vh]">
-              <div className="px-6 sm:px-10 lg:px-14 mt-10 lg:pt-16 pb-12 lg:pb-16">
-                <p className="text-[#F6B300] font-semibold text-xl lg:text-3xl mb-10 text-left">
+              <div className="px-6 sm:px-10 lg:px-14 lg:pt-16 pb-12 lg:pb-16">
+                <p className="text-[#F6B300] font-bold text-xl lg:text-3xl mb-10 text-left uppercase">
                   Activos en operación
                 </p>
 
@@ -281,9 +282,12 @@ const Home = () => {
 
                 {/* Lista "Centrales operativas" */}
                 <div className="mt-12 lg:mt-40 text-left text-2xl font-semibold">
-                  <p className="font-bold text-[#F6B300] mb-6 text-3xl text-left">
+                  <p className="text-black/35 mb-6 text-2xl text-left">
                     Centrales operativas:
                   </p>
+                  <div className="">
+                    <div className="h-px bg-black/10" />
+                  </div>
 
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-10">
                     {/* Diesel label */}
@@ -353,15 +357,15 @@ const Home = () => {
       ========================== */}
             <section id="desarrollo" className="scroll-mt-[14vh]">
               <div className="px-6 sm:px-10 lg:px-14 pt-12 lg:pt-16 pb-14 lg:pb-20">
-                <p className="text-[#F6B300] font-semibold text-xl lg:text-3xl mb-10 text-left">
+                <p className="text-[#F6B300] font-bold text-xl lg:text-3xl mb-10 text-left uppercase">
                   Activos en desarrollo
                 </p>
 
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start text-left">
                   {/* Izquierda */}
                   <div className="lg:col-span-5">
-                    <p className="text-black/60 leading-snug max-w-md">
-                      <span className="font-semibold text-black/80">
+                    <p className="text-black/60 leading-snug max-w-xl font-light text-left text-3xl">
+                      <span className="font-semibold text-black/80 text-3xl lg:text-4xl text-left">
                         Proyectos de generación eléctrica
                       </span>{" "}
                       actualmente en etapa de desarrollo.
@@ -371,11 +375,11 @@ const Home = () => {
                       Último activo en desarrollo:
                     </p>
 
-                    <p className="mt-3 text-4xl lg:text-5xl font-semibold text-black/85">
+                    <p className="mt-3 text-4xl lg:text-8xl font-bold text-black/85">
                       Diesel
                     </p>
 
-                    <p className="mt-2 text-black/55 text-lg lg:text-xl">
+                    <p className="mt-2 text-black/85 text-lg lg:text-6xl">
                       10 × PMGD 3 MW
                     </p>
                   </div>
@@ -384,15 +388,63 @@ const Home = () => {
                   <div className="lg:col-span-7">
                     <div className="rounded-2xl overflow-hidden border border-black/10 shadow-lg">
                       <img
-                        src="/src/assets/images/desarrollo.jpeg"
+                        src="/src/assets/images/rapaco_interior.jpeg"
                         alt="Activos en desarrollo"
-                        className="w-full h-[260px] sm:h-[320px] lg:h-[320px] object-cover"
+                        className="w-full h-full lg:h-[80vh] object-cover"
                       />
                     </div>
                   </div>
                 </div>
               </div>
             </section>
+          </div>
+        </div>
+      </section>
+
+      {/* CLIENTES */}
+      <section
+        id="clientes"
+        className="scroll-mt-[14vh] py-24 overflow-hidden"
+      >
+        <div className="max-w-7xl mx-auto px-5">
+          <h2 className="text-center text-2xl font-semibold uppercase tracking-wider text-[#F6B300] uppercase">
+            Clientes
+          </h2>
+          <h3 className="mt-6 text-4xl lg:text-5xl font-semibold tracking-tight text-center text-[#fafafa]">
+            Empresas que confían en nuestra gestión
+          </h3>
+
+          {/* Botón/píldora */}
+          <div className="mt-36 mb-20 flex flex-col items-center px-10">
+            {/* <p className="mb-6">Main Partner</p> */}
+            <a
+              href="https://energypartners.cl"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+      group
+      w-full max-w-[520px]
+      bg-white/20
+      rounded-full
+      px-10 py-7
+      shadow-[0_24px_60px_rgba(0,0,0,0.25)]
+      border border-black/10
+      flex items-center justify-center
+      transition-transform duration-300
+      hover:-translate-y-[2px]
+      active:translate-y-0
+    "
+              aria-label="Ir a Energy Partners"
+            >
+              <img
+                src={logoEP}
+                alt="Energy Partners"
+                className="h-14 md:h-32 w-auto"
+                draggable="false"
+              />
+            </a>
+
+            <p className="mt-6 italic text-white/55 text-sm">Haz click aquí</p>
           </div>
         </div>
       </section>
@@ -476,8 +528,8 @@ const Home = () => {
             {/* Logo desktop: dentro de la última columna (col-span-2), abajo a la derecha */}
             <div className="hidden lg:flex lg:col-span-2 justify-end self-end">
               <img
-                src={logoEP}
-                alt="Energy Partners"
+                src={logoEN}
+                alt="Energias Novasur"
                 className="h-auto w-[240px] object-contain"
               />
             </div>
@@ -485,8 +537,8 @@ const Home = () => {
           {/* Logo mobile – centrado real */}
           <div className="lg:hidden mt-16 flex justify-center">
             <img
-              src={logoEP}
-              alt="Energy Partners"
+              src={logoEN}
+              alt="Energias Novasur"
               className="h-auto w-[170px] sm:w-[200px] object-contain"
             />
           </div>
