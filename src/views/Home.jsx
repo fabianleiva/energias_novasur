@@ -72,7 +72,7 @@ const Home = () => {
               alt="Energías Novasur"
               className="
       w-full
-      h-[70vh] lg:h-[90vh]
+      h-[70vh] lg:h-[88vh]
       object-cover
       object-[center_50%]
     "
@@ -103,6 +103,10 @@ const Home = () => {
                   <br />y respaldo del sistema
                 </p>
               </div>
+            </div>
+
+            <div className="absolute bottom-16 left-1/2 -translate-x-1/2 z-20">
+              <IoArrowDownCircleOutline className="text-[#fafafa] text-5xl opacity-60 animate-bounce" />
             </div>
           </div>
         </div>
@@ -402,10 +406,7 @@ const Home = () => {
       </section>
 
       {/* CLIENTES */}
-      <section
-        id="clientes"
-        className="scroll-mt-[14vh] py-24 overflow-hidden"
-      >
+      <section id="clientes" className="scroll-mt-[14vh] py-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-5">
           <h2 className="text-center text-2xl font-semibold uppercase tracking-wider text-[#F6B300] uppercase">
             Clientes
