@@ -216,7 +216,7 @@ const Home = () => {
           ACTIVOS EN OPERACIÓN
       ========================== */}
             <section id="operacion" className="scroll-mt-[14vh]">
-              <div className="px-6 sm:px-10 lg:px-14 lg:pt-16 pb-12 lg:pb-16">
+              <div className="px-6 sm:px-10 lg:px-14 pt-12 lg:pt-16 pb-12 lg:pb-16">
                 <p className="text-[#F6B300] font-bold text-xl lg:text-3xl mb-10 text-left uppercase">
                   Activos en operación
                 </p>
@@ -227,20 +227,20 @@ const Home = () => {
                     <div className="space-y-8">
                       {/* 10 centrales */}
                       <div className="flex items-baseline gap-4">
-                        <p className="text-4xl lg:text-8xl font-bold text-black/90">
+                        <p className="text-6xl lg:text-8xl font-bold text-black/90">
                           10
                         </p>
-                        <p className="text-black/45 text-base lg:text-4xl">
+                        <p className="text-black/45 text-2xl lg:text-4xl">
                           centrales
                         </p>
                       </div>
 
                       {/* ≈ 34 MW */}
                       <div className="flex items-baseline gap-4">
-                        <p className="text-4xl lg:text-8xl font-bold text-black/90">
+                        <p className="text-6xl lg:text-8xl font-bold text-black/90">
                           ≈ 34
                         </p>
-                        <p className="text-black/45 text-base lg:text-4xl">
+                        <p className="text-black/45 text-2xl lg:text-4xl">
                           MW instalados
                         </p>
                       </div>
@@ -248,14 +248,14 @@ const Home = () => {
                       {/* 2 tecnologías */}
                       <div>
                         <div className="flex items-baseline gap-4">
-                          <p className="text-4xl lg:text-8xl font-bold text-black/90">
+                          <p className="text-6xl lg:text-8xl font-bold text-black/90">
                             2
                           </p>
-                          <p className="text-black/45 text-base lg:text-4xl">
+                          <p className="text-black/45 text-2xl lg:text-4xl">
                             tecnologías:
                           </p>
                         </div>
-                        <p className="mt-2 text-xl lg:text-6xl font-bold text-black/80">
+                        <p className="mt-2 text-4xl lg:text-6xl font-bold text-black/80">
                           Diésel / Hidro
                         </p>
                       </div>
@@ -440,7 +440,7 @@ const Home = () => {
               <img
                 src={logoEP}
                 alt="Energy Partners"
-                className="h-14 md:h-32 w-auto"
+                className="h-20 md:h-32 w-auto"
                 draggable="false"
               />
             </a>
