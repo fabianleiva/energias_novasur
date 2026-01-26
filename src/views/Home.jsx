@@ -1,21 +1,10 @@
-import {
-  HiOutlineCog6Tooth,
-  HiOutlineCheckBadge,
-  HiOutlinePresentationChartLine,
-  HiOutlineSignal,
-  HiOutlineArrowPathRoundedSquare,
-  HiOutlineDocumentText,
-  HiOutlineArrowsRightLeft,
-  HiOutlineClipboardDocumentCheck,
-} from "react-icons/hi2";
 import { useEffect, useRef, useState } from "react";
-import StackedAreaChart from "../components/StackedAreaChart";
-import BubbleChart from "../components/BubbleChart";
-import SimpleBarChart from "../components/SimpleBarChart";
 import { IoArrowDownCircleOutline } from "react-icons/io5";
-import bg3 from "../assets/images/logo_vector.png";
 import logoEN from "../assets/images/novasur_op1.png";
 import logoEP from "../assets/images/svg_logo_ep_1.png";
+import marver_photo from "../assets/images/marver.jpeg";
+import gami_photo from "../assets/images/gami.jpeg";
+import rapaco_interior_photo from "../assets/images/rapaco_interior.jpeg";
 
 const Home = () => {
   const platformRef = useRef(null);
@@ -68,7 +57,7 @@ const Home = () => {
         <div className="w-[94vw] mx-auto mt-4">
           <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 text-left">
             <img
-              src="/src/assets/images/marver.jpeg"
+              src={marver_photo}
               alt="Energías Novasur"
               className="
       w-full
@@ -276,7 +265,7 @@ const Home = () => {
                   <div className="lg:col-span-6">
                     <div className="rounded-2xl overflow-hidden border border-black/10 shadow-lg">
                       <img
-                        src="/src/assets/images/gami.jpeg"
+                        src={gami_photo}
                         alt="Activos en operación"
                         className="w-full h-full lg:h-[80vh] object-cover"
                       />
@@ -392,7 +381,7 @@ const Home = () => {
                   <div className="lg:col-span-7">
                     <div className="rounded-2xl overflow-hidden border border-black/10 shadow-lg">
                       <img
-                        src="/src/assets/images/rapaco_interior.jpeg"
+                        src={rapaco_interior_photo}
                         alt="Activos en desarrollo"
                         className="w-full h-full lg:h-[80vh] object-cover"
                       />
