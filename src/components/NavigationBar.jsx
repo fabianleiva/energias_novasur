@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import logoEN from "../assets/images/novasur_op1.png";
+
 
 const NavigationBar = () => {
   const { pathname } = useLocation();
@@ -91,8 +93,8 @@ const NavigationBar = () => {
               className="flex items-center"
             >
               <img
-                src="/src/assets/images/novasur_op1.png"
-                alt="Energy Partners"
+                src={logoEN}
+                alt="Energias Novasur"
                 className="max-w-40 lg:max-w-80"
               />
             </button>
