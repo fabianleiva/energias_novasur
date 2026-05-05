@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import { IoArrowDownCircleOutline } from "react-icons/io5";
 import logoEN from "../assets/images/novasur_op1.png";
 import logoEP from "../assets/images/svg_logo_ep_1.png";
-import marver_photo from "../assets/images/marver.jpeg";
+import marver_photo from "../assets/images/marver_edited.webp";
 import gami_photo from "../assets/images/gami.jpeg";
-import rapaco_interior_photo from "../assets/images/rapaco_interior.jpeg";
+import rapaco_interior_photo from "../assets/images/rapaco_alternative.webp";
 
 const Home = () => {
   const platformRef = useRef(null);
@@ -52,7 +52,7 @@ const Home = () => {
       {/* HOME / HERO */}
       <section
         id="home"
-        className="scroll-mt-[14vh] bg-[#0A0F1A] pt-[120px] lg:pt-[140px] pb-12"
+        className="scroll-mt-[14vh] bg-[#0A0F1A] pt-[70px] lg:pt-0 pb-12"
       >
         <div className="w-[94vw] mx-auto mt-4">
           <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 text-left">
@@ -118,7 +118,7 @@ const Home = () => {
                 <h2 className="text-white font-semibold leading-[1.05] tracking-wide text-[44px] sm:text-[56px] lg:text-5xl">
                   Desarrollamos,
                   <br />
-                  construcimos y
+                  construimos y
                   <br />
                   operamos activos
                   <br />
@@ -227,7 +227,7 @@ const Home = () => {
                       {/* ≈ 34 MW */}
                       <div className="flex items-baseline gap-4">
                         <p className="text-6xl lg:text-8xl font-bold text-black/90">
-                          ≈ 34
+                          ≈ 47
                         </p>
                         <p className="text-black/45 text-2xl lg:text-4xl">
                           MW instalados
@@ -238,14 +238,14 @@ const Home = () => {
                       <div>
                         <div className="flex items-baseline gap-4">
                           <p className="text-6xl lg:text-8xl font-bold text-black/90">
-                            2
+                            1
                           </p>
                           <p className="text-black/45 text-2xl lg:text-4xl">
-                            tecnologías:
+                            tecnología:
                           </p>
                         </div>
                         <p className="mt-2 text-4xl lg:text-6xl font-bold text-black/80">
-                          Diésel / Hidro
+                          Diésel
                         </p>
                       </div>
 

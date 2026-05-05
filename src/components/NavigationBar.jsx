@@ -1,17 +1,12 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import logoEN from "../assets/images/novasur_op1.png";
-
 
 const NavigationBar = () => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
 
   const [showInfoText, setShowInfoText] = useState(false);
-
-  // NUEVO: visibilidad del navbar
-  const [isNavVisible, setIsNavVisible] = useState(true);
-  const lastScrollY = useRef(0);
 
   const toggleInfo = () => setShowInfoText((prev) => !prev);
 
@@ -42,50 +37,13 @@ const NavigationBar = () => {
     </button>
   );
 
-  // NUEVO: hide on scroll down, show on scroll up
-  useEffect(() => {
-    const onScroll = () => {
-      // si el menú mobile está abierto, mantenlo visible
-      if (showInfoText) {
-        setIsNavVisible(true);
-        lastScrollY.current = window.scrollY;
-        return;
-      }
-
-      const currentY = window.scrollY;
-      const prevY = lastScrollY.current;
-
-      // zona "segura" arriba: siempre visible
-      if (currentY < 80) {
-        setIsNavVisible(true);
-      } else {
-        const goingDown = currentY > prevY;
-        const delta = Math.abs(currentY - prevY);
-
-        // evita parpadeos con micro-scroll
-        if (delta > 6) {
-          setIsNavVisible(!goingDown);
-        }
-      }
-
-      lastScrollY.current = currentY;
-    };
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [showInfoText]);
-
   return (
-    <header>
+    <header className="fixed top-0 left-0 right-0 lg:relative lg:top-auto z-50">
       <nav
-        className={`fixed top-0 left-0 z-[100] w-full px-6 py-5 font-work-sans tracking-tight font-medium
-  transition-transform duration-300 ease-out
-  ${isNavVisible ? "translate-y-0" : "-translate-y-full"}
-  bg-[#0A0F1A]/80 backdrop-blur-md
-  `}
+        className="relative z-50 w-full px-6 py-3 lg:pt-5 lg:pb-0 font-work-sans tracking-tight font-medium bg-[#0A0F1A]/80 backdrop-blur-md"
       >
         <div className="max-w-[90vw] mx-auto flex items-center justify-between">
-          {/* LOGO — sin tocar tamaño */}
+          {/* LOGO */}
           <div className="flex items-center">
             <button
               type="button"
@@ -100,9 +58,9 @@ const NavigationBar = () => {
             </button>
           </div>
 
-          {/* LINKS DESKTOP — alineados verticalmente con el logo */}
+          {/* LINKS DESKTOP */}
           <div className="hidden lg:flex items-center gap-6 text-lg">
-            <LinkBtn id="home" label="Home" />
+            <LinkBtn id="home" label="Inicio" />
             <LinkBtn id="somos" label="Somos" />
             <LinkBtn id="operacion" label="Operación" />
             <LinkBtn id="desarrollo" label="Desarrollo" />
@@ -141,13 +99,13 @@ const NavigationBar = () => {
 
       {/* MENÚ MOBILE */}
       <div
-        className={`lg:hidden fixed inset-0 bg-[#0A0F1A] z-[90] flex flex-col items-center justify-center transition-opacity duration-500 ${
+        className={`lg:hidden fixed inset-0 z-40 bg-[#0A0F1A] flex flex-col items-center justify-center transition-opacity duration-500 ${
           showInfoText
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
         }`}
       >
-        <LinkBtn id="home" label="Home" className="text-4xl mb-6" />
+        <LinkBtn id="home" label="Inicio" className="text-4xl mb-6" />
         <LinkBtn id="somos" label="Somos" className="text-4xl mb-6" />
         <LinkBtn id="operacion" label="Operación" className="text-4xl mb-6" />
         <LinkBtn id="desarrollo" label="Desarrollo" className="text-4xl mb-6" />
