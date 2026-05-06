@@ -301,11 +301,9 @@ const Home = () => {
                           ["PRP Marver", "3 MW"],
                           ["PRP Las Quemas", "9 MW"],
                           ["PRP Melipulli", "9 MW"],
+                          ["", ""],
                         ].map(([name, mw]) => (
-                          <div
-                            key={name}
-                            className="flex justify-between gap-6"
-                          >
+                          <div key={name || "empty"} className="flex justify-between gap-6">
                             <span>{name}</span>
                             <span className="text-black/35">{mw}</span>
                           </div>
@@ -319,16 +317,14 @@ const Home = () => {
                     <div className="lg:col-span-2 text-black/40">Hidro</div>
 
                     <div className="lg:col-span-10">
-                      <div className="grid grid-cols-1 gap-x-14 gap-y-2 text-black/60 max-w-2xl">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-2 text-black/60">
                         {[
                           ["Muchi", "1 MW"],
                           ["Contra", "0,4 MW"],
                           ["Los Colonos", "0,7 MW"],
+                          ["", ""],
                         ].map(([name, mw]) => (
-                          <div
-                            key={name}
-                            className="flex justify-between gap-6"
-                          >
+                          <div key={name || "empty"} className="flex justify-between gap-6">
                             <span>{name}</span>
                             <span className="text-black/35">{mw}</span>
                           </div>
@@ -406,26 +402,21 @@ const Home = () => {
             Empresas que confían en nuestra gestión
           </h3>
 
-          {/* Botón/píldora */}
-          <div className="mt-36 mb-20 flex flex-col items-center px-10">
-            {/* <p className="mb-6">Main Partner</p> */}
+          {/* Clientes */}
+          <div className="mt-36 mb-20 flex flex-col items-center gap-6 px-10">
+            <div
+              className="w-full max-w-[520px] min-h-[140px] bg-transparent rounded-full px-10 shadow-[0_24px_60px_rgba(0,0,0,0.25)] border border-white/20 flex items-center justify-center"
+            >
+              <span className="text-[#fafafa] text-2xl md:text-3xl font-semibold tracking-tight">
+                Llonquen Energías
+              </span>
+            </div>
+
             <a
               href="https://energypartners.cl"
               target="_blank"
               rel="noopener noreferrer"
-              className="
-      group
-      w-full max-w-[520px]
-      bg-white/20
-      rounded-full
-      px-10 py-7
-      shadow-[0_24px_60px_rgba(0,0,0,0.25)]
-      border border-black/10
-      flex items-center justify-center
-      transition-transform duration-300
-      hover:-translate-y-[2px]
-      active:translate-y-0
-    "
+              className="w-full max-w-[520px] min-h-[140px] bg-white/20 rounded-full px-10 shadow-[0_24px_60px_rgba(0,0,0,0.25)] border border-white/20 flex items-center justify-center transition-transform duration-300 hover:-translate-y-[2px] active:translate-y-0"
               aria-label="Ir a Energy Partners"
             >
               <img
@@ -436,7 +427,7 @@ const Home = () => {
               />
             </a>
 
-            <p className="mt-6 italic text-white/55 text-sm">Haz click aquí</p>
+            <p className="mt-2 italic text-white/55 text-sm">Haz click aquí</p>
           </div>
         </div>
       </section>
