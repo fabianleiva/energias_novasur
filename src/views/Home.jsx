@@ -217,7 +217,7 @@ const Home = () => {
                       {/* 10 centrales */}
                       <div className="flex items-baseline gap-4">
                         <p className="text-6xl lg:text-8xl font-bold text-black/90">
-                          10
+                          14
                         </p>
                         <p className="text-black/45 text-2xl lg:text-4xl">
                           centrales
@@ -238,21 +238,21 @@ const Home = () => {
                       <div>
                         <div className="flex items-baseline gap-4">
                           <p className="text-6xl lg:text-8xl font-bold text-black/90">
-                            1
+                            2
                           </p>
                           <p className="text-black/45 text-2xl lg:text-4xl">
                             tecnología:
                           </p>
                         </div>
                         <p className="mt-2 text-4xl lg:text-6xl font-bold text-black/80">
-                          Diésel
+                          Diésel / Hidro
                         </p>
                       </div>
 
                       {/* Texto descriptivo */}
                       <p className="pt-20 max-w-xl text-black/55 leading-snug font-light text-left text-3xl">
                         <span className="font-bold text-black/80">
-                          Desarrollamos, operamos y mantenemos
+                          Operamos y mantenemos
                         </span>{" "}
                         centrales de generación eléctrica de pequeña y mediana
                         escala, asegurando continuidad operativa, eficiencia y
@@ -357,11 +357,13 @@ const Home = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start text-left">
                   {/* Izquierda */}
                   <div className="lg:col-span-5">
-                    <p className="text-black/60 leading-snug max-w-xl font-light text-left text-3xl">
-                      <span className="font-semibold text-black/80 text-3xl lg:text-4xl text-left">
-                        Proyectos de generación eléctrica
-                      </span>{" "}
-                      actualmente en etapa de desarrollo.
+                    <p className="max-w-xl text-black/55 leading-snug font-light text-left text-3xl">
+                      <span className="font-bold text-black/80">Desarrollamos</span>{" "}
+                      proyectos de generación eléctrica de{" "}
+                      <span className="font-bold text-black/80">pequeña y mediana escala</span>{" "}
+                      en base a{" "}
+                      <span className="font-bold text-black/80">Diésel</span>{" "}
+                      orientadas a asegurar continuidad, respaldo y confiabilidad del sistema eléctrico.
                     </p>
 
                     <p className="mt-10 text-black/45 text-sm lg:text-base">
