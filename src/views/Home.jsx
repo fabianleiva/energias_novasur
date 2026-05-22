@@ -52,7 +52,7 @@ const Home = () => {
       {/* HOME / HERO */}
       <section
         id="home"
-        className="scroll-mt-[14vh] bg-[#0A0F1A] pt-[70px] md:pt-[100px] lg:pt-0 pb-12"
+        className="scroll-mt-[14vh] bg-[#0A0F1A] pt-[70px] md:pt-[300px] lg:pt-0 pb-12"
       >
         <div className="w-[94vw] mx-auto mt-4">
           <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 text-left">
